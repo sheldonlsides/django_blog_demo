@@ -8,5 +8,7 @@
     <p>Published {{ post.publish }} by {{ post.author }}</p>
     {{ post.body|truncatewords:30|linebreaks }}
   {% endfor %}
-  {% include "pagination.html" with page=posts %}
+  {% comment %} for function based views pagination {% endcomment %}
+  {% comment %} {% include "pagination.html" with page=posts %} {% endcomment %}
+  {% include "pagination.html" with page=page_obj %}
 {% endblock %}
