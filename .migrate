@@ -1,0 +1,7 @@
+python3 manage.py migrate
+
+# runs migration for a specific app
+# python3 manage.py makemigrations my_blog
+
+# view migration SQL
+# python manage.py sqlmigrate blog 0001
